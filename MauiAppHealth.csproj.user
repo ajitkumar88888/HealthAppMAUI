@@ -7,4 +7,15 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="SetUpProfile2Page.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="SetUpProfile3Page.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="SetUpProfilePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
 </Project>
