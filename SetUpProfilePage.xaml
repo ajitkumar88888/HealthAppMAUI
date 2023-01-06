@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHealth.SetUpProfilePage"
+             Title="SetUpProfilePage" BackgroundColor="White">
+    <StackLayout>
+        <Image Source="logo.png" HorizontalOptions="End" Margin="0,20,15,0"/>
+        <Label Text="whats your name?" Margin="0,100,0,10" FontFamily="BodoniModa" FontAttributes="Bold" FontSize="22" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Line X2="200" Stroke="LightGray" WidthRequest="100" StrokeThickness="3"/>
+        <Entry x:Name="txtusername" Placeholder="type your name here"  FontFamily="BodoniModa" BackgroundColor="Transparent"
+               ClearButtonVisibility="Never" TextColor="#696969" FontSize="18"
+               HorizontalTextAlignment="Center" HorizontalOptions="Center" WidthRequest="200" Completed="Entry_Completed"/>
+    </StackLayout>
+</ContentPage>

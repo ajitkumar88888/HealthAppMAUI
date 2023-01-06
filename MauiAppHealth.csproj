@@ -49,10 +49,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+
 	  <None Remove="Resources\Images\apple.png" />
 	  <None Remove="Resources\Images\google.png" />
 	  <None Remove="Resources\Images\otp.png" />
 	  <None Remove="Resources\Images\phone.png" />
+	  <None Remove="Resources\Fonts\BodoniModa.ttf" />
+	  <None Remove="Resources\Images\femalesign.png" />
+	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\malesign.png" />
+	  <None Remove="Resources\Images\physical_fitness_1.png" />
+
 	  <None Remove="Resources\Images\signup.png" />
 	</ItemGroup>
 
@@ -61,6 +68,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+
 	  <Compile Update="OTPPage.xaml.cs">
 	    <DependentUpon>OTPPage.xaml</DependentUpon>
 	  </Compile>
@@ -74,6 +82,13 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SignUpPage.xaml">
+	  <MauiXaml Update="SetUpProfile2Page.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SetUpProfile3Page.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SetUpProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
