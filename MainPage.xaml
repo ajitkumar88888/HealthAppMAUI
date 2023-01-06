@@ -2,36 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHealth.MainPage"
-             Shell.NavBarIsVisible="False"
-             BackgroundImageSource="signup.png">
+             Shell.NavBarIsVisible="False">
 
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center">          
 
-            <Frame
-                Background="#2B1C7A"
-                BorderColor="Transparent"
-                CornerRadius="20"
-                HeightRequest="45"
-                WidthRequest="267">
-                <Entry 
-                    Placeholder="your email address"
-                    TextColor="White"/>
-            </Frame>
-
-            <Label Text="or" />
-            
-            <HorizontalStackLayout>
-                <Ellipse Fill="Red"
-         WidthRequest="150"
-         HeightRequest="50"
-         HorizontalOptions="Start" />
-            </HorizontalStackLayout>
-
-            <!--<Image
+            <Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
@@ -54,8 +33,8 @@
                 x:Name="CounterBtn"
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />-->
+                 Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
 
         </VerticalStackLayout>
     </ScrollView>

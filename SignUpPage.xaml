@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHealth.SignUpPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="signup.png">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Frame
+                Background="#2B1C7A"
+                BorderColor="Transparent"
+                CornerRadius="20" Padding="0"
+                Margin="0,230,0,0"
+                WidthRequest="267">
+                <Entry 
+                    Placeholder="your email address" HorizontalTextAlignment="Center"
+                    TextColor="White"/>
+            </Frame>
+
+            <Label Text="or" FontSize="20" HorizontalOptions="Center" />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center" Margin="0" Padding="0">
+                <Frame
+         WidthRequest="42"
+         HeightRequest="42"
+                    CornerRadius="21"
+         Background="Black">
+                    <ImageButton
+                Source="apple.png"
+                WidthRequest="15"
+                HeightRequest="18"
+                HorizontalOptions="Center" />
+                </Frame>
+                <Frame
+         WidthRequest="42"
+         HeightRequest="42"
+                    CornerRadius="21"
+         Background="Black"
+                    Margin="15,0">
+                    <ImageButton
+                Source="google.png"
+                WidthRequest="15"
+                HeightRequest="18"
+                HorizontalOptions="Center"
+                 Clicked="ImageButton_Clicked" />
+                </Frame>
+                <Frame
+         WidthRequest="42"
+         HeightRequest="42"
+                    CornerRadius="21"
+         Background="Black">
+                    <ImageButton
+                Source="phone.png"
+                WidthRequest="15"
+                HeightRequest="18"
+                HorizontalOptions="Center"
+                      />
+                </Frame>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
