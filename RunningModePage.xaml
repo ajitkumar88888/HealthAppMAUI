@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHealth.RunningModePage"
+             Title="RunningModePage"
+             BackgroundImageSource="running_mode.png">
+    <VerticalStackLayout>
+    <StackLayout>
+        <Grid WidthRequest="350" ColumnDefinitions="*,*" RowDefinitions="*">
+            <Frame Grid.Row="0" Grid.Column="0" WidthRequest="56" HeightRequest="56" CornerRadius="28" Background="White" HorizontalOptions="Start">
+                <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" BorderColor="Transparent" Padding="0">
+                        <Label Text="M" FontSize="20" FontFamily="BodoniModa" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Frame.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#9747FF" Offset="0.1" />
+                            <GradientStop Color="#331B74" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                </Frame>
+            </Frame>
+            <Image Grid.Row="0" Grid.Column="1" Source="logo_white.png" HorizontalOptions="End" />
+        </Grid>
+        
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,140,0,0">
+                <Label Text="total steps:" FontSize="20" FontFamily="BodoniModa" TextColor="White" Margin="0,0,5,0" />
+                <Label Text="2456" FontSize="20" FontFamily="BodoniModa" TextColor="White" />
+            </HorizontalStackLayout>           
+
+            <Image Source="running_time.png" Margin="0,30,0,30" />
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0">
+                <Label Text="calories burnt :" FontSize="20" FontFamily="BodoniModa" TextColor="White" Margin="0,0,5,0" />
+                <Label Text="120" FontSize="20" FontFamily="BodoniModa" TextColor="White" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,40,0,0">
+                <Label Text="targeted steps :" FontSize="16" FontFamily="BodoniModa" TextColor="White" Margin="0,0,5,0" />
+                <Label Text="10k" FontSize="16" FontFamily="BodoniModa" TextColor="White" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,0">
+                <Image Source="chevron_left.png" Rotation="180" />
+                <Frame CornerRadius="20" HeightRequest="45" WidthRequest="198" BorderColor="Transparent" Margin="10,0,10,0" Padding="0">
+                    <Label Text="running mode" FontSize="20" FontFamily="BodoniModa" HorizontalTextAlignment="Center" TextColor="Black" VerticalOptions="Center" />
+                </Frame>
+                <Image Source="chevron_left.png" />
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    
+    
+    </VerticalStackLayout>    
+    
+    
+</ContentPage>
