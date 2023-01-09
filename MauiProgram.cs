@@ -16,8 +16,9 @@ public static class MauiProgram
                 fonts.AddFont("BodoniModa.ttf", "BodoniModa");
             });
 
+		
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

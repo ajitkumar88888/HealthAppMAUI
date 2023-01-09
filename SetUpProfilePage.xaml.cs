@@ -7,9 +7,9 @@ public partial class SetUpProfilePage : ContentPage
 		InitializeComponent();
 	}
 
-    private async void Entry_Completed(object sender, EventArgs e)
+    private  void Entry_Completed(object sender, EventArgs e)
     {
 		
-		await Navigation.PushModalAsync(new SetUpProfile2Page(txtusername.Text));
+	  Navigation.PushAsync(new SetUpProfile2Page(txtusername.Text));
     }
 }

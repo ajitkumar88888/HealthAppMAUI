@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHealth.GymMode"
+             Title="GymMode" BackgroundImageSource="gymmode.png" NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <Grid WidthRequest="350" Margin="0,50,0,0" ColumnDefinitions="*,*" RowDefinitions="*">
+            <Frame Grid.Row="0" Grid.Column="0" WidthRequest="56" HeightRequest="56" CornerRadius="28" Background="White" HorizontalOptions="Start">
+                <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" BorderColor="Transparent" Padding="0">
+                    <Label Text="M" FontSize="20" FontFamily="BodoniModa" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Frame.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#9747FF" Offset="0.1" />
+                            <GradientStop Color="#331B74" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                </Frame>
+            </Frame>
+            <Image Grid.Row="0" Grid.Column="1" Source="logo_white.png" HorizontalOptions="End" />
+        </Grid>
+        <Label Text="select your gym schedule for today" TextColor="White" HorizontalOptions="Center" Margin="0,25,0,0" FontSize="20" FontFamily="BodoniModa"/>
+        <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*" Margin="10,20,10,0" RowSpacing="10" ColumnSpacing="10">
+            <Frame Padding="2" Grid.Row="0" Grid.Column="0" Margin="10" HeightRequest="100" HasShadow="True">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*" >
+                    <RadioButton GroupName="gymmoderb" Grid.Row="0" Grid.Column="0" Margin="0,0,-15,0" HorizontalOptions="End"/>
+                    <Image Source="muscle.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" Margin="0,-15,0,0"/>
+                    <Label Text="biceps" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontFamily="BodoniModa" HorizontalOptions="Center"/>
+
+                </Grid>
+
+            </Frame>
+            <Frame Padding="2" Grid.Row="0" Grid.Column="1" Margin="10" HeightRequest="100" HasShadow="True">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*" >
+                    <RadioButton GroupName="gymmoderb" Grid.Row="0" Grid.Column="0" Margin="0,0,-15,0" HorizontalOptions="End"/>
+                    <Image Source="shoulder.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" Margin="0,-15,0,0"/>
+                    <Label Text="shoulders" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontFamily="BodoniModa" HorizontalOptions="Center"/>
+
+                </Grid>
+            </Frame>
+            <Frame Padding="2" Grid.Row="0" Grid.Column="2" Margin="10" HeightRequest="100" HasShadow="True">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*" >
+                    <RadioButton GroupName="gymmoderb" Grid.Row="0" Grid.Column="0" Margin="0,0,-15,0" HorizontalOptions="End"/>
+                    <Image Source="torso.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" Margin="0,-15,0,0"/>
+                    <Label Text="chest" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontFamily="BodoniModa" HorizontalOptions="Center"/>
+
+                </Grid>
+            </Frame>
+            <Frame Padding="2" Grid.Row="1" Grid.Column="0" Margin="10" HeightRequest="100" HasShadow="True">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*" >
+                    <RadioButton GroupName="gymmoderb" Grid.Row="0" Grid.Column="0" Margin="0,0,-15,0" HorizontalOptions="End"/>
+                    <Image Source="abs.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" Margin="0,-15,0,0"/>
+                    <Label Text="cardio" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontFamily="BodoniModa" HorizontalOptions="Center"/>
+
+                </Grid>
+            </Frame>
+            <Frame Padding="2" Grid.Row="1" Grid.Column="1" Margin="10" HeightRequest="100" HasShadow="True">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*" >
+                    <RadioButton GroupName="gymmoderb" Grid.Row="0" Grid.Column="0" Margin="0,0,-15,0" HorizontalOptions="End"/>
+                    <Image Source="legs.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" Margin="0,-15,0,0"/>
+                    <Label Text="legs" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontFamily="BodoniModa" HorizontalOptions="Center"/>
+
+                </Grid>
+            </Frame>
+            <Frame Padding="2" Grid.Row="1" Grid.Column="2" Margin="10" HeightRequest="100" HasShadow="True">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*" >
+                    <RadioButton GroupName="gymmoderb" Grid.Row="0" Grid.Column="0" Margin="0,0,-15,0" HorizontalOptions="End"/>
+                    <Image Source="back.png" Grid.Row="1" Grid.Column="0" HeightRequest="35" Margin="0,-15,0,0"/>
+                    <Label Text="back" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontFamily="BodoniModa" HorizontalOptions="Center"/>
+
+                </Grid>
+            </Frame>
+        </Grid>
+        <Button Text="next" BackgroundColor="White" Margin="0,50,0,0" WidthRequest="100" CornerRadius="20" TextColor="Black" FontAttributes="Bold" FontFamily="BodoniModa" FontSize="20"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,160,0,0">
+            <Image Source="chevron_left.png" Rotation="180"/>
+            <Frame CornerRadius="20" HeightRequest="45" WidthRequest="198" BorderColor="Transparent" Margin="10,0,10,0" Padding="0">
+                <Label Text="running mode" FontSize="20" FontFamily="BodoniModa" HorizontalTextAlignment="Center" TextColor="Black" VerticalOptions="Center" />
+            </Frame>
+            <Image Source="chevron_left.png" />
+        </HorizontalStackLayout>
+       
+    </StackLayout>
+</ContentPage>

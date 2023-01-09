@@ -7,8 +7,13 @@ public partial class SignUpPage : ContentPage
 		InitializeComponent();
 	}
 
-    private async void ImageButton_Clicked(object sender, EventArgs e)
+    private  void ImageButton_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new OTPPage());
+        Navigation.PushAsync(new OTPPage());
+    }
+
+    private void Entry_Completed(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new OTPPage());
     }
 }
