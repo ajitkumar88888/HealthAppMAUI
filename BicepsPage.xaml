@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHealth.BicepsPage"
+             BackgroundImageSource="biceps_bg.png">
+    <VerticalStackLayout>
+        <StackLayout>
+            <Grid WidthRequest="350" ColumnDefinitions="*,*" RowDefinitions="*">
+                <Frame Grid.Row="0" Grid.Column="0" WidthRequest="56" HeightRequest="56" CornerRadius="28" Background="White" HorizontalOptions="Start">
+                    <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" BorderColor="Transparent" Padding="0">
+                        <Label Text="M" FontSize="20" FontFamily="BodoniModa" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Frame.Background>
+                            <LinearGradientBrush EndPoint="0,1">
+                                <GradientStop Color="#9747FF" Offset="0.1" />
+                                <GradientStop Color="#331B74" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                    </Frame>
+                </Frame>
+                <Image Grid.Row="0" Grid.Column="1" Source="logo_white.png" HorizontalOptions="End" />
+            </Grid>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5,0,25">
+                <Label TextDecorations="Underline" TextColor="White" FontSize="20" FontFamily="BodoniModa">
+                    training
+                </Label>
+                <Label TextColor="White" FontSize="20" FontFamily="BodoniModa" Margin="80,0,80,0">
+                    courses
+                </Label>
+                <Label TextColor="White" FontSize="20" FontFamily="BodoniModa">
+                    gym
+                </Label>
+            </HorizontalStackLayout>
+
+
+            <StackLayout>
+                <CarouselView x:Name="TheCarousel" HeightRequest="235" WidthRequest="380" IndicatorView="indicatorView">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding .}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="indicatorView"
+                   IndicatorColor="LightGray"
+                   SelectedIndicatorColor="DarkGray"
+                   HorizontalOptions="Center" Margin="0,10,0,0"/>
+            </StackLayout>
+
+            <Label TextColor="White" FontSize="20" FontFamily="BodoniModa" Margin="25,0,0,15">
+                trending
+            </Label>
+
+            <ScrollView Orientation="Vertical" HeightRequest="250" Padding="15,0,15,0">
+                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*" ColumnSpacing="15" RowSpacing="15">
+                    <Frame Grid.Row="0" Grid.Column="0" Padding="0">
+                        <Grid>
+                            <Image Source="trending.png" Aspect="AspectFill" Scale="1.1"/>
+                            <StackLayout Padding="10" VerticalOptions="Center">
+                                <Label Text="new @iamjoe watch how to transform" FontFamily="BodoniModa" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="4">
+                                    <Frame CornerRadius="30" Padding="15">
+                                        <Image Source="polygon.png" HeightRequest="15" HorizontalOptions="Center"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="trainer" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="biceps" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                </HorizontalStackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="1" Padding="0">
+                        <Grid>
+                            <Image Source="trending.png" Aspect="AspectFill" Scale="1.1"/>
+                            <StackLayout Padding="10" VerticalOptions="Center">
+                                <Label Text="new @iamjoe watch how to transform" FontFamily="BodoniModa" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="4">
+                                    <Frame CornerRadius="30" Padding="15">
+                                        <Image Source="polygon.png" HeightRequest="15" HorizontalOptions="Center"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="trainer" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="biceps" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                </HorizontalStackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="0" Padding="0">
+                        <Grid>
+                            <Image Source="trending.png" Aspect="AspectFill" Scale="1.1"/>
+                            <StackLayout Padding="10" VerticalOptions="Center">
+                                <Label Text="new @iamjoe watch how to transform" FontFamily="BodoniModa" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="4">
+                                    <Frame CornerRadius="30" Padding="15">
+                                        <Image Source="polygon.png" HeightRequest="15" HorizontalOptions="Center"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="trainer" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="biceps" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                </HorizontalStackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="1" Padding="0">
+                        <Grid>
+                            <Image Source="trending.png" Aspect="AspectFill" Scale="1.1"/>
+                            <StackLayout Padding="10" VerticalOptions="Center">
+                                <Label Text="new @iamjoe watch how to transform" FontFamily="BodoniModa" TextColor="White"/>
+                                <HorizontalStackLayout Spacing="4">
+                                    <Frame CornerRadius="30" Padding="15">
+                                        <Image Source="polygon.png" HeightRequest="15" HorizontalOptions="Center"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="trainer" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                    <Frame Padding="5" HorizontalOptions="Center" CornerRadius="15" VerticalOptions="Center">
+                                        <Label Text="biceps" WidthRequest="45" FontFamily="BodoniModa"/>
+                                    </Frame>
+                                </HorizontalStackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </Grid>
+
+            </ScrollView>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,0">
+                <Image Source="chevron_left.png" Rotation="180" />
+                <Frame CornerRadius="20" HeightRequest="45" WidthRequest="198" BorderColor="Transparent" Margin="10,0,10,0" Padding="0">
+                    <Label Text="biceps" FontSize="20" FontFamily="BodoniModa" HorizontalTextAlignment="Center" TextColor="Black" VerticalOptions="Center" />
+                </Frame>
+                <Image Source="chevron_left.png" />
+            </HorizontalStackLayout>
+
+        </StackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>

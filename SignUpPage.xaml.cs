@@ -11,4 +11,9 @@ public partial class SignUpPage : ContentPage
     {
         await Navigation.PushModalAsync(new OTPPage());
     }
+
+    private async void Entry_Completed(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new OTPPage());
+    }
 }
